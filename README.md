@@ -27,7 +27,7 @@ Or install it yourself as:
 %table
   %tr
     %td
-      = link_to "#", "data-toggler"=>true, "data-toggle"=>"#moredetail", "data-container"=>"tr" do
+      = link_to "#", "data-togglit"=>"#moredetail", "data-container"=>"tr" do
         %i.fa.fa-caret-down
     %td
       Some table data.
