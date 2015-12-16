@@ -34,16 +34,16 @@ Or install it yourself as:
     Here is some more detail
 ```
 
-### Toggling table rows.
+### Toggling table rows
 ```haml
 %table
   %tr
     %td
-      = link_to "#", "data-togglit"=>"#moredetail", "data-container"=>"tr" do
+      = link_to "#", "data-togglit"=>"#moredetail", "data-container"=>"#detailparent" do
         %i.fa.fa-caret-down
     %td
       Some table data.
-  %tr.hide
+  %tr#detailparent.hide
     %td{:colspan=>7}
       .hide{:id=>"moredetail"}
         Here is some more detail that will be toggled ON/OFF by Togglit.
