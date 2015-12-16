@@ -23,6 +23,7 @@ Or install it yourself as:
 ## Usage
 
 ### Toggling table rows.
+```haml
 %table
   %tr
     %td
@@ -34,7 +35,7 @@ Or install it yourself as:
     %td{:colspan=>7}
       .hide{:id=>"moredetail"}
         Here is some more detail that will be toggled ON/OFF by Togglit.
-
+```
 
 ## Development
 
