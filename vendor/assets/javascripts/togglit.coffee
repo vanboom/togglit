@@ -1,7 +1,8 @@
-@togglit = (parent, id, container="div", speed=600) ->
-  $(id).closest(container).toggle()
-  $(parent).toggleClass('fa-caret-down fa-caret-up')
-  $(id).slideToggle("fast")
+togglit = (toggler, id, container="", speed=400) ->
+  if container
+    $(container).toggle()
+  $(toggler).toggleClass('fa-caret-down fa-caret-up')
+  $(id).slideToggle(speed)
 
 $(document).ready ->
   $("[data-togglit]").bind "click", ->

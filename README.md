@@ -21,6 +21,18 @@ Or install it yourself as:
     $ gem install togglit
 
 ## Usage
+1. Add the `data-togglit` attribute to the link that will activate/deactivate the show/hide toggle.
+2. Define the CSS element to be toggled using the `data-togglit` attribute.
+3. Define an additional element to be shown/hidden using the `data-container` attribute.  This is useful for toggling <tr> parents of your show/hide element.
+
+### Example
+```haml
+  = link_to "#", "data-togglit"=>"#moredetail" do
+    %i.fa.fa-caret-down
+
+  #moredetail.hide
+    Here is some more detail
+```
 
 ### Toggling table rows.
 ```haml
