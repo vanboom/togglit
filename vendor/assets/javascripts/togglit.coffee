@@ -7,3 +7,4 @@ togglit = (toggler, id, container="", speed=400) ->
 $(document).ready ->
   $("[data-togglit]").bind "click", ->
     togglit($(this).children("i"), $(this).data('togglit'), $(this).data('container'))
+    return false
