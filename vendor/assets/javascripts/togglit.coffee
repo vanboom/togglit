@@ -1,4 +1,4 @@
-togglit = (toggler, id, container="", speed=400) ->
+togglit = (toggler, id, container="", speed=200) ->
   if container
     $(container).toggle()
   $(toggler).toggleClass('fa-caret-down fa-caret-up')
