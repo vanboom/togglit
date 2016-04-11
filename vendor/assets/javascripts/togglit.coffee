@@ -7,7 +7,7 @@ togglit = (toggler, id, container="", speed=200) ->
 @bind_togglit = ->
   $("[data-togglit]").unbind "click.togglit"
   $("[data-togglit]").bind "click.togglit", ->
-    togglit($(this).children("i"), $(this).data('togglit'), $(this).data('container'))
+    togglit($(this).children("i.fa-caret-right").first(), $(this).data('togglit'), $(this).data('container'))
     return false
 
 @togglit_all_hide = (root=document) ->
